@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <title>Model Publisher</title>
+  <meta content="Document Publisher, www.modeliosoft.com/" name="generator"/>
+	<link href="docp-print.css" media="print" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+     function hideLoading() {
+          document.getElementById('divLoading').style.display = "none";
+          document.getElementById('divFrameHolder').style.display = "block";
+     }
+   
+     function getPageName(url) {
+          var index = url.lastIndexOf("/") + 1;
+          var filenameWithExtension = url.substr(index);
+          var filename = filenameWithExtension.split(".")[0];
+          return filename;
+     }
+  
+     function updateSidebarFrameSrc() {
+          var currentpagename = getPageName(window.location.pathname);
+          document.getElementById("sidebar_frame").src="index.html?page=" + currentpagename;
+     }  
+  
+     if (window.addEventListener)
+          window.addEventListener("load", updateSidebarFrameSrc, false);
+     else if (window.attachEvent)
+          window.attachEvent("onload", updateSidebarFrameSrc);
+     else 
+          window.onload = updateSidebarFrameSrc;
+  </script> 
+  <link href="default.css" media="screen" rel="stylesheet" type="text/css"/></head>
+  <body>
+    <div id="container">        
+      <div id="content">          
+        <div id="header">            
+          <div id="logo"><img src="img/logo.png"/></div>
+          <h1 class="documentTitle">Model Publisher</h1>
+          <h2 class="documentType"> </h2>            
+        </div>
+				<div id="gTable">
+					<div id="tSidebar"><div id="divLoading"><img alt="" src="img/ajax-loader.gif"/></div><div id="divFrameHolder"><iframe frameborder="0" id="sidebar_frame" src="index.html"><p>Your browser does not support iframes.</p></iframe></div><script type="text/javascript">document.getElementById('divLoading').style.display = "block";
+document.getElementById('divFrameHolder').style.display = "none";
+document.getElementById('sidebar_frame').onload = function() {
+hideLoading();
+}</script></div>
+          <div id="tMainArea">
+            <div id="navbar"><ul><li class="disable" id="prev">&lt; Previous</li><li class="disable" id="summary">Summary</li><li id="next"><a href="1.html" title="1.html">Next &gt;</a></li></ul></div>
+            <div id="page"><div><div align="LEFT" characterStyle="None" class="Titre1" sectionStyle="Titre1" startOnNewPage="true"><a name="toc1" target="_top"><!--anchor--></a>Modelo de Casos de Uso<a name="_18ab356c-42bd-4257-a5f1-b382f52a93f2" target="_top"><!--anchor--></a></div><a name="#Table 1" target="_top"><!--anchor--></a><div id="tableContainer"><table class="ListeclaireAccent1" horizontal="true" tableStyle="ListeclaireAccent1"><caption>Table 1 - "Modelo de Casos de Uso" properties</caption><tr class="odd"><th><div align="CENTER" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Name</div></th><th><div align="CENTER" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Value</div></th></tr><tr class="even"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Name</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Modelo de Casos de Uso</div></td></tr><tr class="odd"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">IsAbstract</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">false</div></td></tr><tr class="even"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">IsInstantiable</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">false</div></td></tr><tr class="odd"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">IsLeaf</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">false</div></td></tr><tr class="even"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">IsRoot</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">false</div></td></tr><tr class="odd"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Owner</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false"/></td></tr><tr class="even"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">OwnerTemplateParameter</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false"/></td></tr><tr class="odd"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Represented</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false"/><a target="_top"/></td></tr><tr class="even"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Visibility</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Public</div></td></tr></table></div><div>
+</div><div align="LEFT" class="Soustitre" paragraphStyle="Soustitre" startOnNewPage="false">overview diagram</div><div align="LEFT" class="Soustitre" paragraphStyle="Soustitre" startOnNewPage="false">Modelo de Casos de Uso Use Case diagram</div><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false"/><a name="#Figure 1" target="_top"><!--anchor--></a><center><img alt="Modelo de Casos de Uso Use Case diagram" height="315.5807365439094" paragraphStyle="Image" src="img/8d5488e5-a08a-46f5-abfa-bee3fad3348c.png" usemap="#8d5488e5-a08a-46f5-abfa-bee3fad3348c" width="600.0"/></center><a class="openImage" href="img/8d5488e5-a08a-46f5-abfa-bee3fad3348c.png"><img class="openImage" src="img/zoom.gif" title="Zoom"/></a><div align="CENTER" class="Legende" paragraphStyle="Legende">Figure 1 Modelo de Casos de Uso Use Case diagram</div><map name="8d5488e5-a08a-46f5-abfa-bee3fad3348c"><area ALT="Cliente" coords="6,36,29,47" href="1.html#_65b783df-fe45-4204-939d-ad3b33df6f22" name="8d5488e5-a08a-46f5-abfa-bee3fad3348c" shape="rect"/><area ALT="Cliente" coords="0,0,36,36" href="1.html#_65b783df-fe45-4204-939d-ad3b33df6f22" name="8d5488e5-a08a-46f5-abfa-bee3fad3348c" shape="rect"/><area ALT="Garagem" coords="10,139,40,150" href="2.html#_f0a05d1f-eeae-4c41-a59a-9e4e5ad51544" name="8d5488e5-a08a-46f5-abfa-bee3fad3348c" shape="rect"/><area ALT="Garagem" coords="7,103,43,139" href="2.html#_f0a05d1f-eeae-4c41-a59a-9e4e5ad51544" name="8d5488e5-a08a-46f5-abfa-bee3fad3348c" shape="rect"/><area ALT="Funcionário" coords="562,105,600,116" href="3.html#_30d2708e-35b1-47cb-ac51-3e28b717cd78" name="8d5488e5-a08a-46f5-abfa-bee3fad3348c" shape="rect"/><area ALT="Funcionário" coords="562,69,598,105" href="3.html#_30d2708e-35b1-47cb-ac51-3e28b717cd78" name="8d5488e5-a08a-46f5-abfa-bee3fad3348c" shape="rect"/><area ALT="Alugar veículo" coords="120,35,233,77" href="4.html#_cdecde79-0e37-4957-bade-9f2ecddf07fe" name="8d5488e5-a08a-46f5-abfa-bee3fad3348c" shape="rect"/><area ALT="Fornecer veículo" coords="109,125,222,168" href="5.html#_7ffd0ed3-af2d-4cdd-b28f-f05c86d174e3" name="8d5488e5-a08a-46f5-abfa-bee3fad3348c" shape="rect"/><area ALT="Atualizar dados de veículos" coords="392,12,505,54" href="6.html#_33dbc2f9-7f77-4625-88f8-8cb625ef6525" name="8d5488e5-a08a-46f5-abfa-bee3fad3348c" shape="rect"/><area ALT="Produzir relatórios financeiros" coords="392,80,505,122" href="7.html#_edb3bbc4-3c84-4d5e-bc76-01e9a17518e4" name="8d5488e5-a08a-46f5-abfa-bee3fad3348c" shape="rect"/><area ALT="Localizar cliente" coords="335,148,449,190" href="8.html#_5252b1cc-e539-457b-a480-48974c5750c1" name="8d5488e5-a08a-46f5-abfa-bee3fad3348c" shape="rect"/><area ALT="Atualizar dados de planos" coords="324,239,437,281" href="9.html#_d1211f83-6dbd-48c6-b00c-0fcd6cfad7f5" name="8d5488e5-a08a-46f5-abfa-bee3fad3348c" shape="rect"/><area ALT="Segmentar clientes" coords="449,273,562,315" href="10.html#_0a9babba-c1ee-4fe0-9c80-f295ba5dc308" name="8d5488e5-a08a-46f5-abfa-bee3fad3348c" shape="rect"/></map></div></div>
+            <br/>
+            <div class="spacer" id="navbar"><ul><li class="disable" id="prev">&lt; Previous</li><li class="disable" id="summary">Summary</li><li id="next"><a href="1.html" title="1.html">Next &gt;</a></li></ul></div>  
+            <div id="footer"><p>Document automatically generated by Modelio Document Publisher.<br/><a href="http://www.modeliosoft.com">www.modeliosoft.com</a></p></div>
+          </div>            
+        </div>           
+      </div>
+    </div>
+  </body>
+</html>

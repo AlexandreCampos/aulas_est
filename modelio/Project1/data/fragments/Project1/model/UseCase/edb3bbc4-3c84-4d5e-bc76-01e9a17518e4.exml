@@ -1,0 +1,138 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Produzir relatórios financeiros" version="4">
+  <OBJECT>
+    <ID name="Produzir relatórios financeiros" mc="Standard.UseCase" uid="edb3bbc4-3c84-4d5e-bc76-01e9a17518e4"/>
+    <PID name="SLCar" mc="Standard.Package" uid="18ab356c-42bd-4257-a5f1-b382f52a93f2"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Produzir relatórios financeiros]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Standard.Note" uid="6c380de8-df28-4e56-b460-b66bd20da8c5"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Breve Descrição
+Este caso de uso descreve o fluxo de eventos que ocorre durante o processo de produção de relatório financeiro da locadora.
+
+Atores Envolvidos
+Funcionário
+
+Pré-condições
+O funcionário precisa estar cadastrado e autenticado no sistema.
+
+Legenda para o texto abaixo:
+A: Ator
+S: Sistema
+
+Fluxo Básico de Eventos
+
+1. A - O funcionário acessa uma tela com diversos relaórios financeiros disponíveis e suas descrições.
+
+2. A - O funcionário seleciona um relatório financeiro e coloca em execução.
+
+3. S - O sistema executa o relatório financeiro. Dependendo do tipo de relatório, pode demorar alguns minutos. O status fica 'em execução'.
+
+4. S - O sistema termina a execução do relatório financeiro. O status é atualizado para 'concluído'.
+
+5. S - O sistema gera um relatório em um documento para ser baixado.
+
+6. A - O funcionário clica em download para receber o documento e trabalhar com os dados.
+
+Fluxos Alternativos
+No passo 3, o sistema ocorre algum erro no processamento de criação relatório financeiro. O status é atualizado para 'erro'. Uma mensagem com os detalhes do erro é exibida na tela. O funcionário pode executar novamente ou tentar mais tarde.
+
+Pós-condições
+O relatório financeiro é gerado no sistema.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.Note" uid="b9e21ec4-cff6-40dd-84a9-3ea7dd471541"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="constraint" mc="Standard.NoteType" uid="00bc0b8c-0000-251b-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.Note" uid="719414ea-b144-46d8-978b-2e2e0a654eab"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="non-functional constraint" mc="Standard.NoteType" uid="00bc0c08-0000-242c-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.Note" uid="9b81be5f-04a9-4b6b-9ba0-84feea9bfcd1"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Fluxos Alternativos
+
+No passo 3, o sistema ocorre algum erro no processamento de criação relatório financeiro. O status é atualizado para 'erro'. Uma mensagem com os detalhes do erro é exibida na tela. O funcionário pode executar novamente ou tentar mais tarde.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="exception" mc="Standard.NoteType" uid="00bc0b8c-0000-2519-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.Note" uid="4f766e4c-8b6e-434e-953c-8d5a92f882c1"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Pré-condições
+O funcionário precisa estar cadastrado e autenticado no sistema.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="precondition" mc="Standard.NoteType" uid="00bc0b8c-0000-2515-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.Note" uid="3c51452a-533b-49eb-a83d-70aa3495a996"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[O relatório financeiro é gerado no sistema.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="postcondition" mc="Standard.NoteType" uid="00bc0b8c-0000-2517-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
