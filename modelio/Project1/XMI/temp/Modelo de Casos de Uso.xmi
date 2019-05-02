@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><uml:Model xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:version="2.1" xmi:id="_vUZ_IFGdEem6iPmE3Qu73Q" name="Modelo de Casos de Uso">
-  <eAnnotations xmi:id="_vUZ_IVGdEem6iPmE3Qu73Q" source="Objing">
-    <contents xmi:type="uml:Property" xmi:id="_vUZ_IlGdEem6iPmE3Qu73Q" name="exporterVersion">
-      <defaultValue xmi:type="uml:LiteralString" xmi:id="_vUZ_I1GdEem6iPmE3Qu73Q" value="3.0.0"/>
-    </contents>
-  </eAnnotations>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_vUZ_JFGdEem6iPmE3Qu73Q" name="Actor"/>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_vUZ_JVGdEem6iPmE3Qu73Q" name="Actor1"/>
-</uml:Model>
