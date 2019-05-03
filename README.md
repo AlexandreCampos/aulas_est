@@ -4,7 +4,7 @@ EST
 Últimas atualizações:
 
 02/05
-Diagrama de Casos de Uso foi atualizado, para incluir o quadrado no centro referenciando o sistema.
+Diagrama de Casos de Uso foi atualizado, para incluir o quadrado no centro referenciando o sistema. Falta fazer as demais modificações abordadas na aula retrasada.
 
 02/05
 As pastas foram organizadas em:
