@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <title>Model Publisher</title>
+  <meta content="Document Publisher, www.modeliosoft.com/" name="generator"/>
+	<link href="docp-print.css" media="print" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+     function hideLoading() {
+          document.getElementById('divLoading').style.display = "none";
+          document.getElementById('divFrameHolder').style.display = "block";
+     }
+   
+     function getPageName(url) {
+          var index = url.lastIndexOf("/") + 1;
+          var filenameWithExtension = url.substr(index);
+          var filename = filenameWithExtension.split(".")[0];
+          return filename;
+     }
+  
+     function updateSidebarFrameSrc() {
+          var currentpagename = getPageName(window.location.pathname);
+          document.getElementById("sidebar_frame").src="index.html?page=" + currentpagename;
+     }  
+  
+     if (window.addEventListener)
+          window.addEventListener("load", updateSidebarFrameSrc, false);
+     else if (window.attachEvent)
+          window.attachEvent("onload", updateSidebarFrameSrc);
+     else 
+          window.onload = updateSidebarFrameSrc;
+  </script> 
+  <link href="default.css" media="screen" rel="stylesheet" type="text/css"/></head>
+  <body>
+    <div id="container">        
+      <div id="content">          
+        <div id="header">            
+          <div id="logo"><img src="img/logo.png"/></div>
+          <h1 class="documentTitle">Model Publisher</h1>
+          <h2 class="documentType"> </h2>            
+        </div>
+				<div id="gTable">
+					<div id="tSidebar"><div id="divLoading"><img alt="" src="img/ajax-loader.gif"/></div><div id="divFrameHolder"><iframe frameborder="0" id="sidebar_frame" src="index.html"><p>Your browser does not support iframes.</p></iframe></div><script type="text/javascript">document.getElementById('divLoading').style.display = "block";
+document.getElementById('divFrameHolder').style.display = "none";
+document.getElementById('sidebar_frame').onload = function() {
+hideLoading();
+}</script></div>
+          <div id="tMainArea">
+            <div id="navbar"><ul><li id="prev"><a href="17.html" title="17.html">&lt; Previous</a></li><li class="disable" id="summary">Summary</li><li id="next"><a href="19.html" title="19.html">Next &gt;</a></li></ul></div>
+            <div id="page"><div><div align="LEFT" characterStyle="None" class="Titre2" sectionStyle="Titre2" startOnNewPage="true"><a name="toc1.18" target="_top"><!--anchor--></a>Produzir relatórios financeiros<a name="_edb3bbc4-3c84-4d5e-bc76-01e9a17518e4" target="_top"><!--anchor--></a></div><div align="LEFT" class="Texte" paragraphStyle="Texte" startOnNewPage="false">UseCase</div><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Breve Descrição
+Este caso de uso descreve o fluxo de eventos que ocorre durante o processo de produção de relatório financeiro da locadora.
+
+Atores Envolvidos
+Funcionário
+
+Pré-condições
+O funcionário precisa estar cadastrado e autenticado no sistema.
+
+Legenda para o texto abaixo:
+A: Ator
+S: Sistema
+
+Fluxo Básico de Eventos
+
+1. A - O funcionário acessa uma tela com diversos relaórios financeiros disponíveis e suas descrições.
+
+2. A - O funcionário seleciona um relatório financeiro e coloca em execução.
+
+3. S - O sistema executa o relatório financeiro. Dependendo do tipo de relatório, pode demorar alguns minutos. O status fica 'em execução'.
+
+4. S - O sistema termina a execução do relatório financeiro. O status é atualizado para 'concluído'.
+
+5. S - O sistema gera um relatório em um documento para ser baixado.
+
+6. A - O funcionário clica em download para receber o documento e trabalhar com os dados.
+
+Fluxos Alternativos
+No passo 3, o sistema ocorre algum erro no processamento de criação relatório financeiro. O status é atualizado para 'erro'. Uma mensagem com os detalhes do erro é exibida na tela. O funcionário pode executar novamente ou tentar mais tarde.
+
+Pós-condições
+O relatório financeiro é gerado no sistema.</div><a name="#Table 19" target="_top"><!--anchor--></a><div id="tableContainer"><table class="ListeclaireAccent1" horizontal="true" tableStyle="ListeclaireAccent1"><caption>Table 19 - "Produzir relatórios financeiros" properties</caption><tr class="odd"><th><div align="CENTER" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Name</div></th><th><div align="CENTER" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Value</div></th></tr><tr class="even"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Name</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Produzir relatórios financeiros</div></td></tr><tr class="odd"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">ExceptionInput</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false"/></td></tr><tr class="even"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">IsAbstract</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">false</div></td></tr><tr class="odd"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">IsElementary</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">false</div></td></tr><tr class="even"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">IsLeaf</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">false</div></td></tr><tr class="odd"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">IsRoot</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">false</div></td></tr><tr class="even"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Owner</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false"/><a href="0.html#_18ab356c-42bd-4257-a5f1-b382f52a93f2" target="_top"/></td></tr><tr class="odd"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">OwnerTemplateParameter</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false"/></td></tr><tr class="even"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Visibility</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Public</div></td></tr></table></div><div>
+</div></div></div>
+            <br/>
+            <div class="spacer" id="navbar"><ul><li id="prev"><a href="17.html" title="17.html">&lt; Previous</a></li><li class="disable" id="summary">Summary</li><li id="next"><a href="19.html" title="19.html">Next &gt;</a></li></ul></div>  
+            <div id="footer"><p>Document automatically generated by Modelio Document Publisher.<br/><a href="http://www.modeliosoft.com">www.modeliosoft.com</a></p></div>
+          </div>            
+        </div>           
+      </div>
+    </div>
+  </body>
+</html>
