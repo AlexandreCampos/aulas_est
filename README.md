@@ -1,10 +1,17 @@
 # aulas_est
 EST
 
+==> Falta fazer as demais modificações abordadas na aula retrasada.
+
+
+========================================================================================
 Últimas atualizações:
 
+03/05
+Modelo de Domínio foi atualizado, para remover o detalhamento de atributos e tipos de dados.
+
 02/05
-Diagrama de Casos de Uso foi atualizado, para incluir o quadrado no centro referenciando o sistema. Falta fazer as demais modificações abordadas na aula retrasada.
+Diagrama de Casos de Uso foi atualizado, para incluir o quadrado no centro referenciando o sistema. 
 
 02/05
 As pastas foram organizadas em:
