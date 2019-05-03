@@ -1,2 +1,0 @@
-Casos de uso descritos: Atualizar dados de veículos; Produzir relatórios financeiros. 
-Github: https://github.com/AlexandreCampos/aulas_est/
