@@ -7,7 +7,7 @@ EST
 ========================================================================================
 Últimas atualizações:
 
-05/05
+04/05
 Descrições dos casos de uso foram atualizadas, incluíndo mais detalhamento, conforme orientações vistas em aula.
 
 03/05
