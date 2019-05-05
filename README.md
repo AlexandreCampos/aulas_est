@@ -1,11 +1,11 @@
 # aulas_est
 EST
 
-==> Falta atualizar o Diagrama de Robustez, utilizando conceito de OBJETOS.
-
-
 ========================================================================================
 Últimas atualizações:
+
+05/05
+Diagramas de Robustez foram atualizados, utilizando visão de objetos.
 
 04/05
 Descrições dos casos de uso foram atualizadas, incluíndo mais detalhamento, conforme orientações vistas em aula.
