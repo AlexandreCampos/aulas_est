@@ -1,11 +1,14 @@
 # aulas_est
 EST
 
-==> Falta fazer as demais modificações abordadas na aula retrasada.
+==> Falta atualizar o Diagrama de Robustez, utilizando conceito de OBJETOS.
 
 
 ========================================================================================
 Últimas atualizações:
+
+05/05
+Descrições dos casos de uso foram atualizadas, incluíndo mais detalhamento, conforme orientações vistas em aula.
 
 03/05
 Modelo de Domínio foi atualizado, para remover o detalhamento de atributos e tipos de dados.
