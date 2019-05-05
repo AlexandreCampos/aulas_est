@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Produzir relatórios financeiros" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Produzir relatório financeiro de receita de aluguéis" version="4">
   <OBJECT>
-    <ID name="Produzir relatórios financeiros" mc="Standard.UseCase" uid="edb3bbc4-3c84-4d5e-bc76-01e9a17518e4"/>
+    <ID name="Produzir relatório financeiro de receita de aluguéis" mc="Standard.UseCase" uid="edb3bbc4-3c84-4d5e-bc76-01e9a17518e4"/>
     <PID name="SLCar" mc="Standard.Package" uid="18ab356c-42bd-4257-a5f1-b382f52a93f2"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
@@ -9,7 +9,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Produzir relatórios financeiros]]></ATT>
+      <ATT name="Name"><![CDATA[Produzir relatório financeiro de receita de aluguéis]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
@@ -18,7 +18,7 @@
           <ID name="" mc="Standard.Note" uid="6c380de8-df28-4e56-b460-b66bd20da8c5"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[Breve Descrição
-Este caso de uso descreve o fluxo de eventos que ocorre durante o processo de produção de relatório financeiro da locadora.
+Este caso de uso descreve o fluxo de eventos que ocorre durante o processo de produção de relatório financeiro de receita de aluguéis da locadora.
 
 Atores Envolvidos
 Funcionário
@@ -26,23 +26,19 @@ Funcionário
 Pré-condições
 O funcionário precisa estar cadastrado e autenticado no sistema.
 
-Legenda para o texto abaixo:
-A: Ator
-S: Sistema
-
 Fluxo Básico de Eventos
 
-1. A - O funcionário acessa uma tela com diversos relaórios financeiros disponíveis e suas descrições.
+1. O funcionário acessa uma tela com diversos relaórios financeiros disponíveis e suas descrições.
 
-2. A - O funcionário seleciona um relatório financeiro e coloca em execução.
+2. O funcionário seleciona o relatório financeiro de receita de alugéis e coloca em execução.
 
-3. S - O sistema executa o relatório financeiro. Dependendo do tipo de relatório, pode demorar alguns minutos. O status fica 'em execução'.
+3. O sistema executa o relatório financeiro. Ou seja, acessa os registros de alugueis de todos os clientes e soma os valores de receita. Este processo pode demorar alguns minutos. O status fica 'em execução'.
 
-4. S - O sistema termina a execução do relatório financeiro. O status é atualizado para 'concluído'.
+4. O sistema termina a execução do relatório. O status é atualizado para 'concluído'.
 
-5. S - O sistema gera um relatório em um documento para ser baixado.
+5. O sistema gera um relatório em um documento csv para ser baixado.
 
-6. A - O funcionário clica em download para receber o documento e trabalhar com os dados.
+6. O funcionário clica em download para receber o documento e trabalhar com os dados.
 
 Fluxos Alternativos
 No passo 3, o sistema ocorre algum erro no processamento de criação relatório financeiro. O status é atualizado para 'erro'. Uma mensagem com os detalhes do erro é exibida na tela. O funcionário pode executar novamente ou tentar mais tarde.

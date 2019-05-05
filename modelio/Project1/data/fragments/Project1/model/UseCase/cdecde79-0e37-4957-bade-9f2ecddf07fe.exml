@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Alugar veículo" version="4">
   <OBJECT>
     <ID name="Alugar veículo" mc="Standard.UseCase" uid="cdecde79-0e37-4957-bade-9f2ecddf07fe"/>
-    <PID name="Modelo de Casos de Uso" mc="Standard.Package" uid="18ab356c-42bd-4257-a5f1-b382f52a93f2"/>
+    <PID name="SLCar" mc="Standard.Package" uid="18ab356c-42bd-4257-a5f1-b382f52a93f2"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
       <ATT name="IsAbstract">false</ATT>
@@ -17,7 +17,46 @@
         <OBJECT>
           <ID name="" mc="Standard.Note" uid="dcc64281-8646-4d79-8d99-0498a46bdd91"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="Content"><![CDATA[Este caso de uso descreve o fluxo de eventos que ocorre durante o processo de locação de veículos na loja da locadora.
+
+Atores Envolvidos
+Cliente, Atendente
+
+Pré-condições
+O cliente precisa estar cadastrado e autenticado no sistema
+
+Fluxo Básico de Eventos
+
+1. O Cliente escolhe o local de retirada do  veículo.
+
+2. O Cliente seleciona o período da locação (data inicial e final).
+
+3. O sistema verifica a disponibilidade de veículos para o local e período selecionados.
+
+4. O sistema apresenta os veículos disponíveis.
+
+5. O Cliente seleciona o veículo desejado.
+
+6. O sistema calcula do valor da locação e  apresenta para o cliente.
+
+7. O Cliente confirma a reserva da locação.
+
+8. O sistema solicita a forma de pagamento (débito, crédito ou boleto bancário).
+
+9. O cliente entra com a forma de pagamento.
+
+10. O sistema registra a forma de pagamento na reserva do veículo.
+
+11. O sistema fecha a reserva e a apresenta as informações para o cliente.
+
+12. O caso de uso termina.
+
+Fluxos Alternativos
+No passo 3, o sistema verifica que não existem veículos disponíveis na loja selecionado pelo cliente. Neste caso, o sistema apresenta uma mensagem para o cliente informando a indisponibilidade e o caso de uso termina.
+
+Pós-condições
+A reserva de locação é registrada no sistema.
+]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -59,7 +98,7 @@
         <OBJECT>
           <ID name="" mc="Standard.Note" uid="30fa35a2-f7f2-4e69-98dc-4f0611488724"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="Content"><![CDATA[No passo 3, o sistema verifica que não existem veículos disponíveis na loja selecionado pelo cliente. Neste caso, o sistema apresenta uma mensagem para o cliente informando a indisponibilidade e o caso de uso termina.]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -73,7 +112,7 @@
         <OBJECT>
           <ID name="" mc="Standard.Note" uid="62488113-760b-41ac-953d-8f5e40e361ac"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="Content"><![CDATA[O cliente precisa estar cadastrado e autenticado no sistema]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -87,7 +126,7 @@
         <OBJECT>
           <ID name="" mc="Standard.Note" uid="9250b18f-9eec-4567-86a9-504506fa25d4"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="Content"><![CDATA[A reserva de locação é registrada no sistema.]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>

@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Atualizar dados de veículos" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Atualizar dados cadastrais de veículos" version="4">
   <OBJECT>
-    <ID name="Atualizar dados de veículos" mc="Standard.UseCase" uid="33dbc2f9-7f77-4625-88f8-8cb625ef6525"/>
+    <ID name="Atualizar dados cadastrais de veículos" mc="Standard.UseCase" uid="33dbc2f9-7f77-4625-88f8-8cb625ef6525"/>
     <PID name="SLCar" mc="Standard.Package" uid="18ab356c-42bd-4257-a5f1-b382f52a93f2"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
@@ -9,7 +9,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Atualizar dados de veículos]]></ATT>
+      <ATT name="Name"><![CDATA[Atualizar dados cadastrais de veículos]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
@@ -18,35 +18,30 @@
           <ID name="" mc="Standard.Note" uid="6760cdab-df43-4834-8b1d-f0ea53d8bb29"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[Breve Descrição
-Este caso de uso descreve o fluxo de eventos que ocorre durante o processo de atualização dados de um veiculo da locadora.
+Este caso de uso descreve o fluxo de eventos que ocorre durante o processo de atualização dados cadastrais de um veiculo da locadora.
 
 Pré-condições
 O funcionário precisa estar cadastrado e autenticado no sistema.
 
-Legenda para o texto abaixo:
-A: Ator
-S: Sistema
-
 Fluxo Básico de Eventos
 
-1. A - O funcionário informa qual veículo deseja atualizar dados.
+1. O funcionário informa o nome ou código do veículo que deseja atualizar dados.
 
-2. S - O sistema faz a busca do veículo.
+2. O sistema faz a busca do veículo.
 
-3. S - O sistema apresenta os detalhes do veículo, caso exista.
+3. O sistema apresenta os detalhes do veículo, caso exista.
 
-4. A - O funcionário seleciona o formulário de editar informações do veículo.
+4. O funcionário seleciona o formulário de editar informações do veículo.
 
-5. A - O funcionário atualiza as informações necessárias.
+5. O funcionário atualiza as informações necessárias. Podem ser: nome, placa, cor, ano, marca, etc.
 
-6. S - O sistema valida se as atualizações estão nos formatos corretos e dentro das condições estabelecidas.
+6. O sistema valida se as atualizações estão nos formatos corretos e dentro das condições estabelecidas.
 
-7. A - O sistema informa que as atualizações foram realizadas com sucesso.
+7. O sistema informa que as atualizações foram realizadas com sucesso.
 
-8. S - O caso de uso termina.
+8. O caso de uso termina.
 
 Fluxos Alternativos
-
 No passo 6, o sistema verifica que algum dado não estava com os formatos corretos e dentro das condições estabelecidas. Neste caso, o sistema apresenta uma mensagem para o funcionário solicitando que atualize novamente o dado incorreto e quais são as regras.
 
 Pós-condições

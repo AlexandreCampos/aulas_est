@@ -48,8 +48,8 @@ hideLoading();
 }</script></div>
           <div id="tMainArea">
             <div id="navbar"><ul><li id="prev"><a href="17.html" title="17.html">&lt; Previous</a></li><li class="disable" id="summary">Summary</li><li id="next"><a href="19.html" title="19.html">Next &gt;</a></li></ul></div>
-            <div id="page"><div><div align="LEFT" characterStyle="None" class="Titre2" sectionStyle="Titre2" startOnNewPage="true"><a name="toc1.18" target="_top"><!--anchor--></a>Produzir relatórios financeiros<a name="_edb3bbc4-3c84-4d5e-bc76-01e9a17518e4" target="_top"><!--anchor--></a></div><div align="LEFT" class="Texte" paragraphStyle="Texte" startOnNewPage="false">UseCase</div><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Breve Descrição
-Este caso de uso descreve o fluxo de eventos que ocorre durante o processo de produção de relatório financeiro da locadora.
+            <div id="page"><div><div align="LEFT" characterStyle="None" class="Titre2" sectionStyle="Titre2" startOnNewPage="true"><a name="toc1.18" target="_top"><!--anchor--></a>Produzir relatório financeiro de receita de aluguéis<a name="_edb3bbc4-3c84-4d5e-bc76-01e9a17518e4" target="_top"><!--anchor--></a></div><div align="LEFT" class="Texte" paragraphStyle="Texte" startOnNewPage="false">UseCase</div><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Breve Descrição
+Este caso de uso descreve o fluxo de eventos que ocorre durante o processo de produção de relatório financeiro de receita de aluguéis da locadora.
 
 Atores Envolvidos
 Funcionário
@@ -57,29 +57,25 @@ Funcionário
 Pré-condições
 O funcionário precisa estar cadastrado e autenticado no sistema.
 
-Legenda para o texto abaixo:
-A: Ator
-S: Sistema
-
 Fluxo Básico de Eventos
 
-1. A - O funcionário acessa uma tela com diversos relaórios financeiros disponíveis e suas descrições.
+1. O funcionário acessa uma tela com diversos relaórios financeiros disponíveis e suas descrições.
 
-2. A - O funcionário seleciona um relatório financeiro e coloca em execução.
+2. O funcionário seleciona o relatório financeiro de receita de alugéis e coloca em execução.
 
-3. S - O sistema executa o relatório financeiro. Dependendo do tipo de relatório, pode demorar alguns minutos. O status fica 'em execução'.
+3. O sistema executa o relatório financeiro. Ou seja, acessa os registros de alugueis de todos os clientes e soma os valores de receita. Este processo pode demorar alguns minutos. O status fica 'em execução'.
 
-4. S - O sistema termina a execução do relatório financeiro. O status é atualizado para 'concluído'.
+4. O sistema termina a execução do relatório. O status é atualizado para 'concluído'.
 
-5. S - O sistema gera um relatório em um documento para ser baixado.
+5. O sistema gera um relatório em um documento csv para ser baixado.
 
-6. A - O funcionário clica em download para receber o documento e trabalhar com os dados.
+6. O funcionário clica em download para receber o documento e trabalhar com os dados.
 
 Fluxos Alternativos
 No passo 3, o sistema ocorre algum erro no processamento de criação relatório financeiro. O status é atualizado para 'erro'. Uma mensagem com os detalhes do erro é exibida na tela. O funcionário pode executar novamente ou tentar mais tarde.
 
 Pós-condições
-O relatório financeiro é gerado no sistema.</div><a name="#Table 19" target="_top"><!--anchor--></a><div id="tableContainer"><table class="ListeclaireAccent1" horizontal="true" tableStyle="ListeclaireAccent1"><caption>Table 19 - "Produzir relatórios financeiros" properties</caption><tr class="odd"><th><div align="CENTER" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Name</div></th><th><div align="CENTER" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Value</div></th></tr><tr class="even"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Name</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Produzir relatórios financeiros</div></td></tr><tr class="odd"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">ExceptionInput</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false"/></td></tr><tr class="even"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">IsAbstract</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">false</div></td></tr><tr class="odd"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">IsElementary</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">false</div></td></tr><tr class="even"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">IsLeaf</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">false</div></td></tr><tr class="odd"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">IsRoot</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">false</div></td></tr><tr class="even"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Owner</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false"/><a href="0.html#_18ab356c-42bd-4257-a5f1-b382f52a93f2" target="_top"/></td></tr><tr class="odd"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">OwnerTemplateParameter</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false"/></td></tr><tr class="even"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Visibility</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Public</div></td></tr></table></div><div>
+O relatório financeiro é gerado no sistema.</div><a name="#Table 19" target="_top"><!--anchor--></a><div id="tableContainer"><table class="ListeclaireAccent1" horizontal="true" tableStyle="ListeclaireAccent1"><caption>Table 19 - "Produzir relatório financeiro de receita de aluguéis" properties</caption><tr class="odd"><th><div align="CENTER" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Name</div></th><th><div align="CENTER" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Value</div></th></tr><tr class="even"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Name</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Produzir relatório financeiro de receita de aluguéis</div></td></tr><tr class="odd"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">ExceptionInput</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false"/></td></tr><tr class="even"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">IsAbstract</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">false</div></td></tr><tr class="odd"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">IsElementary</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">false</div></td></tr><tr class="even"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">IsLeaf</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">false</div></td></tr><tr class="odd"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">IsRoot</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">false</div></td></tr><tr class="even"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Owner</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false"/><a href="0.html#_18ab356c-42bd-4257-a5f1-b382f52a93f2" target="_top"/></td></tr><tr class="odd"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">OwnerTemplateParameter</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false"/></td></tr><tr class="even"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Visibility</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Public</div></td></tr></table></div><div>
 </div></div></div>
             <br/>
             <div class="spacer" id="navbar"><ul><li id="prev"><a href="17.html" title="17.html">&lt; Previous</a></li><li class="disable" id="summary">Summary</li><li id="next"><a href="19.html" title="19.html">Next &gt;</a></li></ul></div>  
