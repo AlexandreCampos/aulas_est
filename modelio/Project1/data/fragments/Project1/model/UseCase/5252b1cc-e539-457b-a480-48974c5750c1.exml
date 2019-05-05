@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Localizar cliente" version="4">
   <OBJECT>
     <ID name="Localizar cliente" mc="Standard.UseCase" uid="5252b1cc-e539-457b-a480-48974c5750c1"/>
-    <PID name="Modelo de Casos de Uso" mc="Standard.Package" uid="18ab356c-42bd-4257-a5f1-b382f52a93f2"/>
+    <PID name="SLCar" mc="Standard.Package" uid="18ab356c-42bd-4257-a5f1-b382f52a93f2"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
       <ATT name="IsAbstract">false</ATT>
@@ -17,7 +17,26 @@
         <OBJECT>
           <ID name="" mc="Standard.Note" uid="e2fb35e5-18dd-4448-8588-069a172acb31"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="Content"><![CDATA[Breve Descrição
+Este caso de uso descreve o fluxo de eventos que ocorre durante o processo de localização de um cliente em caso de necessidade (troca de carro, não retorno do carro, etc).
+
+Pré-condições
+O funcionário precisa estar cadastrado e autenticado no sistema.
+
+Fluxo Básico de Eventos
+
+1. O funcionário informa o nome ou código do cliente que deseja contatar.
+
+2. O sistema faz a busca do cliente.
+
+3. O sistema apresenta as informações de contato do cliente: Nome completo, endereço, telefone, email, etc.
+
+4. O funcionário recolhe as informações que deseja para contatar o cliente.
+
+Fluxos Alternativos
+No passo 2, o sistema não encontra o cliente. É exibida a mensagem "cliente não encontrado".
+
+]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -59,7 +78,8 @@
         <OBJECT>
           <ID name="" mc="Standard.Note" uid="d9b3c756-2a71-444a-996b-39777859a880"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="Content"><![CDATA[No passo 2, o sistema não encontra o cliente. É exibida a mensagem "cliente não encontrado".
+]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -73,7 +93,7 @@
         <OBJECT>
           <ID name="" mc="Standard.Note" uid="50e44b70-5a55-4fe0-91db-3c395cd2827b"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="Content"><![CDATA[O funcionário precisa estar cadastrado e autenticado no sistema.]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>

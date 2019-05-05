@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Atualizar dados de planos" version="4">
   <OBJECT>
     <ID name="Atualizar dados de planos" mc="Standard.UseCase" uid="d1211f83-6dbd-48c6-b00c-0fcd6cfad7f5"/>
-    <PID name="Modelo de Casos de Uso" mc="Standard.Package" uid="18ab356c-42bd-4257-a5f1-b382f52a93f2"/>
+    <PID name="SLCar" mc="Standard.Package" uid="18ab356c-42bd-4257-a5f1-b382f52a93f2"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
       <ATT name="IsAbstract">false</ATT>
@@ -17,7 +17,37 @@
         <OBJECT>
           <ID name="" mc="Standard.Note" uid="b8257689-0331-4ea0-957b-c02cbb92d7c8"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="Content"><![CDATA[Breve Descrição
+Este caso de uso descreve o fluxo de eventos que ocorre durante o processo de atualização de dados de planos de aluguel da locadora.
+
+Pré-condições
+O funcionário precisa estar cadastrado e autenticado no sistema.
+
+Fluxo Básico de Eventos
+
+1. O funcionário informa o nome ou código do plano que deseja atualizar dados.
+
+2. O sistema faz a busca do plano.
+
+3. O sistema apresenta os detalhes do plano.
+
+4. O funcionário seleciona o formulário de editar informações do plano.
+
+5. O funcionário atualiza as informações necessárias. Podem ser: nome, tipo, duração, valor da tarifa diária, etc.
+
+6. O sistema valida se as atualizações estão nos formatos corretos e dentro das condições estabelecidas.
+
+7. O sistema informa que as atualizações foram realizadas com sucesso.
+
+8. O caso de uso termina.
+
+Fluxos Alternativos
+No passo 2, o sistema não encontra o plano informado. É exibida a mensagem "plano não encontrado".
+No passo 6, o sistema verifica que algum dado não estava com os formatos corretos e dentro das condições estabelecidas. Neste caso, o sistema apresenta uma mensagem para o funcionário solicitando que atualize novamente o dado incorreto e quais são as regras.
+
+Pós-condições
+Os dados do plano são atualizados no sistema.
+]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -59,7 +89,9 @@
         <OBJECT>
           <ID name="" mc="Standard.Note" uid="2be0fe48-24f2-4e2e-9669-9f80665fb53e"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="Content"><![CDATA[No passo 2, o sistema não encontra o plano informado. É exibida a mensagem "plano não encontrado".
+No passo 6, o sistema verifica que algum dado não estava com os formatos corretos e dentro das condições estabelecidas. Neste caso, o sistema apresenta uma mensagem para o funcionário solicitando que atualize novamente o dado incorreto e quais são as regras.
+]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -73,7 +105,7 @@
         <OBJECT>
           <ID name="" mc="Standard.Note" uid="624b85db-08b2-4249-8fa7-aed1fc568804"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="Content"><![CDATA[O funcionário precisa estar cadastrado e autenticado no sistema.]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -87,7 +119,7 @@
         <OBJECT>
           <ID name="" mc="Standard.Note" uid="968906b0-747f-4bee-a84d-4b0d9b12d755"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="Content"><![CDATA[Os dados do plano são atualizados no sistema.]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>

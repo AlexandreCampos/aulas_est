@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Segmentar clientes" version="4">
   <OBJECT>
     <ID name="Segmentar clientes" mc="Standard.UseCase" uid="0a9babba-c1ee-4fe0-9c80-f295ba5dc308"/>
-    <PID name="Modelo de Casos de Uso" mc="Standard.Package" uid="18ab356c-42bd-4257-a5f1-b382f52a93f2"/>
+    <PID name="SLCar" mc="Standard.Package" uid="18ab356c-42bd-4257-a5f1-b382f52a93f2"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
       <ATT name="IsAbstract">false</ATT>
@@ -17,7 +17,25 @@
         <OBJECT>
           <ID name="" mc="Standard.Note" uid="f1d6e00b-a598-45fc-a07b-debcb8673ec9"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="Content"><![CDATA[Breve Descrição
+Este caso de uso descreve o fluxo de eventos que ocorre durante o processo de seguemtação de clientes pela locadora.
+
+Pré-condições
+O funcionário precisa estar cadastrado e autenticado no sistema.
+
+Fluxo Básico de Eventos
+
+1. O funcionário digita o critério de segmentação de clientes que deseja utilizar. As opções são pré-definidas: endereço, idade, tipo de plano que costuma utilizar ou veículo que costuma utilizar.
+
+2. O sistema busca todos os clientes registrados e agrupa-os pela segmentação escolhida. São geradas 5 níveis de agrupamentos.
+
+3. O sistema gera um documento csv com 2 colunas principais: nome e segmento (exemplo: "idade de 18 a 30 anos"). As demais colunas são as informações de cadastro, como endereço, idade, gênero, etc.
+
+4. O funcionário faz download do documento csv e trabalha com os dados para criar campanhas de marketing personalizadas.
+
+Pós-condições
+Campanhas de marketing podem ser realizadas com base em segmentação de clientes.
+]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -73,7 +91,7 @@
         <OBJECT>
           <ID name="" mc="Standard.Note" uid="3ab29233-eb44-4f2e-b063-c295b222061f"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="Content"><![CDATA[O funcionário precisa estar cadastrado e autenticado no sistema.]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -87,7 +105,7 @@
         <OBJECT>
           <ID name="" mc="Standard.Note" uid="50f7839f-81da-4736-b23c-4d32aaa80f12"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="Content"><![CDATA[Campanhas de marketing podem ser realizadas com base em segmentação de clientes.]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>

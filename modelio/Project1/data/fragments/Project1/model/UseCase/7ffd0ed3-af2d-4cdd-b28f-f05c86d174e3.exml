@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Fornecer veículo" version="4">
   <OBJECT>
     <ID name="Fornecer veículo" mc="Standard.UseCase" uid="7ffd0ed3-af2d-4cdd-b28f-f05c86d174e3"/>
-    <PID name="Modelo de Casos de Uso" mc="Standard.Package" uid="18ab356c-42bd-4257-a5f1-b382f52a93f2"/>
+    <PID name="SLCar" mc="Standard.Package" uid="18ab356c-42bd-4257-a5f1-b382f52a93f2"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
       <ATT name="IsAbstract">false</ATT>
@@ -17,7 +17,30 @@
         <OBJECT>
           <ID name="" mc="Standard.Note" uid="c026db70-b3a8-4d32-9703-6c1729119378"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="Content"><![CDATA[Este caso de uso descreve o fluxo de eventos que ocorre durante o processo de fornecimento de um veículo pela garagem.
+
+Atores Envolvidos
+Garagem, Funcionário da garagem
+
+Pré-condições
+O funcionário da garagem precisa estar cadastrado e autenticado no sistema.
+
+Fluxo Básico de Eventos
+
+1. O funcionário da garagem faz a busca do veículo pelo código.
+
+2. O sistema apresenta o veículo pesquisado.
+
+3. O funcionário da garagem informa que o veículo chegou na garagem e está disponível.
+
+4. O veículo receve o status 'disponível'.
+
+Fluxos Alternativos
+No passo 2, o sistema não encontra o veículo. É exibida a mensagem "veículo não encontrado".
+
+Pós-condições
+O veículo fica disponível para ser alugado.
+]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -59,7 +82,7 @@
         <OBJECT>
           <ID name="" mc="Standard.Note" uid="21cdaaf9-7c08-459b-8e94-b61fe8c007c8"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="Content"><![CDATA[No passo 2, o sistema não encontra o veículo. É exibida a mensagem "veículo não encontrado".]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -73,7 +96,7 @@
         <OBJECT>
           <ID name="" mc="Standard.Note" uid="9dd8f489-868e-49b7-936c-f52b63c34825"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="Content"><![CDATA[O funcionário da garagem precisa estar cadastrado e autenticado no sistema.]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -87,7 +110,7 @@
         <OBJECT>
           <ID name="" mc="Standard.Note" uid="f070da90-112b-45d0-b7b3-f86e3f884658"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="Content"><![CDATA[O veículo fica disponível para ser alugado.]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
