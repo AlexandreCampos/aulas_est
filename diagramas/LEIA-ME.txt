@@ -1,0 +1,1 @@
+Achei as interfaces do Modelio para Diagrama de Sequencia e Diagrama de Robustez muito ruins. Por isso utilizei um programa externo para estes casos.
